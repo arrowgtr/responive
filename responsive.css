@@ -64,19 +64,20 @@ body {
     display: none;
 }
 
-/* New responsive styles within a media query */
-@media screen and (max-width: 767px) {
+/* Responsive styles within a media query */
+@media screen and (min-width: 320px) and (max-width: 2560px) {
     #header {
         left: 10px; /* Adjust left position for smaller screens */
         top: 10px; /* Adjust top position for smaller screens */
-        width: 100%; /* Adjust width to fill the screen */
+        width: calc(100% - 20px); /* Adjust width to fill the screen */
     }
 
     .quicksearch {
         right: 10px; /* Adjust right position for smaller screens */
         top: 10px; /* Adjust top position for smaller screens */
         min-width: auto; /* Remove minimum width */
-        width: 90%; /* Adjust width to fill the screen */
+        width: calc(100% - 20px); /* Adjust width to fill the screen */
         padding: 10px; /* Adjust padding for smaller screens */
     }
 }
+
