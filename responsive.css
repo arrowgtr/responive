@@ -32,3 +32,51 @@ body {
         margin: 10px auto; /* Center image horizontally and add margin */
     }
 }
+/* Existing CSS styles for #header */
+#header {
+    position: absolute; 
+    left: 33px;
+    top: 44px;
+    background: #fff url('include/templates/default/images/header.png') no-repeat center top;
+    height: 100px;
+    width: 120%;
+    background-size: 100% 100%, auto;
+}
+
+/* Existing CSS styles for .quicksearch */
+.quicksearch {
+    position: absolute;
+    right: 0;
+    top: 27px;
+    background: #fff;
+    z-index: 1500;
+    border-radius: 2px;
+    color: #000;
+    border: none;
+    min-width: 250px;
+    z-index: 2127483647;
+    padding: 10px;
+    border-top: 2px solid #e3452f;
+    transform: translateY(0);
+    transition: cubic-bezier(.4, 0, .2, 1) .26s transform,cubic-bezier(.4, 0, .2, 1) .26s opacity;
+    border-radius: 3px;
+    box-shadow: 0 6px 10px 0px rgba(0,0,0,0.14), 0 1px 18px 0px rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.2);
+    display: none;
+}
+
+/* New responsive styles within a media query */
+@media screen and (max-width: 767px) {
+    #header {
+        left: 10px; /* Adjust left position for smaller screens */
+        top: 10px; /* Adjust top position for smaller screens */
+        width: 100%; /* Adjust width to fill the screen */
+    }
+
+    .quicksearch {
+        right: 10px; /* Adjust right position for smaller screens */
+        top: 10px; /* Adjust top position for smaller screens */
+        min-width: auto; /* Remove minimum width */
+        width: 90%; /* Adjust width to fill the screen */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
