@@ -80,4 +80,24 @@ body {
         padding: 10px; /* Adjust padding for smaller screens */
     }
 }
+/* Responsive styles within a media query */
+@media screen and (max-width: 2560px) {
+    .success {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        width: calc(100% - 40px); /* Adjust width to fill the screen */
+    }
+
+    table {
+        width: 100%; /* Make tables responsive */
+    }
+
+    .codeeditor {
+        width: 100%; /* Make code editor responsive */
+    }
+
+    .codemain {
+        max-height: 60vh; /* Adjust max-height for smaller screens */
+    }
+}
+
 
